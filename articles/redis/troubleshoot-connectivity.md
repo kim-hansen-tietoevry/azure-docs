@@ -76,10 +76,6 @@ Steps to check your private endpoint configuration:
 
 1. `Public Network Access` is currently not supported for Azure Managed Redis. You cannot connect to your cache private endpoint from outside the virtual network of your cache.
 
-### Firewall rules
-
-If you have a firewall configured for your Azure Managed Redis, ensure that your client IP address is added to the firewall rules. You can check **Firewall** on the Resource menu under **Settings** on the Azure portal.
-
 #### Third-party firewall or external proxy
 
 When you use a third-party firewall or proxy in your network, check that the endpoint for Azure Managed Redis, `*.redis.azure.net`, is allowed along with the port `10000`. You might need to allow more ports when using a clustered cache or geo-replication.
